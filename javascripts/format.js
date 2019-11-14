@@ -41,14 +41,14 @@ shortenMoney = function (money) {
 };
 
 function timeDisplay(time) {
-  if (time <= 100) return (time).toFixed(3) + " seconds"
+  if (time <= 100) return (time).toFixed(3) + "秒"
   if (time >= 31536000) {
-      return Decimal.floor(time / 31536000) + " years, " + Decimal.floor((time % 31536000) / 86400) + " days, " + Decimal.floor((time % 86400) / 3600) + " hours, " + Decimal.floor((time % 3600) / 60) + " minutes, and " + Decimal.floor(time % 60) + " seconds"
+      return Decimal.floor(time / 31536000) + "年" + Decimal.floor((time % 31536000) / 86400) + "天" + Decimal.floor((time % 86400) / 3600) + "小時" + Decimal.floor((time % 3600) / 60) + "分" + Decimal.floor(time % 60) + "秒"
   } else if (time >= 86400) {
-      return Decimal.floor(time / 86400) + " days, " + Decimal.floor((time % 86400) / 3600) + " hours, " + Decimal.floor((time % 3600) / 60) + " minutes, and " + Decimal.floor(time % 60) + " seconds"
+      return Decimal.floor(time / 86400) + "天" + Decimal.floor((time % 86400) / 3600) + "小時" + Decimal.floor((time % 3600) / 60) + "分" + Decimal.floor(time % 60) + "秒"
   } else if (time >= 3600) {
-      return Decimal.floor(time / 3600) + " hours, " + Decimal.floor((time % 3600) / 60) + " minutes, and " + Decimal.floor(time % 60) + " seconds"
+      return Decimal.floor(time / 3600) + "小時" + Decimal.floor((time % 3600) / 60) + "分" + Decimal.floor(time % 60) + "秒"
   } else if (time >= 60) {
-      return Decimal.floor(time / 60) + " minutes, and " + Decimal.floor(time % 60) + " seconds"
-  } else return Decimal.floor(time % 60) + " seconds"
+      return Decimal.floor(time / 60) + "分" + Decimal.floor(time % 60) + "秒"
+  } else return Decimal.floor(time % 60) + "秒"
 }
