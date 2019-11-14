@@ -47,12 +47,12 @@ var displayNames = {
 
 var itemDescs = {
   development: [
-    "2x Atom can be merged every second",
-    "10x bigger particle storage",
-    "Build a facility where you can try and make some cool stuff happen",
-    "0.5 less particles are required per atom",
-    "Construct a Crank out of molecules",
-    "Make a stable molecule merger with all you have learned"
+    "每秒可以聚合的原子2倍",
+    "粒子貯存大10倍",
+    "建築一個可以嘗試和將好事發生的中心",
+    "每原子所需的粒子數量少0.5",
+    "用分子建築一個曲軸",
+    "從之前所知道的建造一個固定的分子聚合機"
   ],
   research: [
     "Attempt to construct a molecule out of all the particles",
