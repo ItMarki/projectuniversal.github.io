@@ -39,10 +39,10 @@ var foo = { // I just can't name this one
 }
 
 var displayNames = {
-    building: ["Particle constructor", "T1 Building", "T2 Building"],
-    development: ["Bigger Atom Merger", "Bigger Particle Storage", "Research facility", "More efficient Atom merging", "The Cranks", "Molecule Merger"],
-    research: ["Make a molecule", "Self sufficient", "Parallel working"],
-    discover: ["Molecule fusing"]
+    building: ["粒子建造器", "T1建築物", "T2建築物"],
+    development: ["更大的原子聚合機", "更大的粒子貯存", "研究中心", "更高效率的原子聚合", "曲軸", "分子聚合機"],
+    research: ["建造一個分子", "自給自足", "平行工作"],
+    discover: ["分子聚合"]
 }
 
 var itemDescs = {
