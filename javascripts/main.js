@@ -96,16 +96,16 @@ getElement("researchSpendPercent").oninput = function() {
 
 function exportGame() {
     copyStringToClipboard(btoa(JSON.stringify(player)))
-    alert("Exported to clipboard")
+    alert("成功導出到剪貼簿裏")
 }
 
 function importGame() {
-    loadGame(prompt("Please paste your exported save below:"),true)
+    loadGame(prompt("請在以下貼上你導出的存檔："),true)
 }
 
 function hardReset(forced = false) {
-    if (forced || confirm("Are you sure about reset ALL of your progress?")) {
-        if (forced || confirm("Do you REALLY sure? This is the LAST confirmation!")) {
+    if (forced || confirm("你確不確定要重置你全部的進度？")) {
+        if (forced || confirm("真的確定？這是最後的確定！")) {
             player = getDefaultPlayer()
             saveGame()
             location.reload()
