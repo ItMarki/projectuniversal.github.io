@@ -63,10 +63,10 @@ let gameLoopIntervalId = 0
 var player = getDefaultPlayer()
 let prologueAtom = new Decimal("9e79")
 let prologueGenActivated = false
-let storyTexts = ["Your Universe was rapidly decaying.",
-                  "To combat this, your crew created a pocket dimension to escape to when necessary.",
-                  "But soon enough, you realize..",
-                  "You're taking part in the Universe's final moments.",
+let storyTexts = ["你的宇宙在快速地衰退。",
+                  "來對付這件事，你的船員們創造一個口袋維度，在需要的時候逃走。",
+                  "但是短短之後，你才發現……",
+                  "你在參與宇宙的最終時刻。",
                   "And it all starts with this generator.",
                   "SYSTEM: The sum of all matter produced in the universe has surpassed the maximum threshold. Universal collapse in estimated ten seconds.",
                   "The Beginning.",
