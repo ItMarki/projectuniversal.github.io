@@ -4,7 +4,7 @@
 let saveName = "PUSave"
 let initPlayerFunctionName = "getDefaultPlayer"
 let playerVarName = "player" // DO NOT USE THE WORD "SAVE"
-let importDangerAlertText = "Your imported save seems to be missing some values, which means importing this save might be destructive, if you have made a backup of your current save and are sure about importing this save please press OK, if not, press cancel and the save will not be imported."
+let importDangerAlertText = "你導入的存檔好像不見了一些數值，意思是導入這存檔可能有一些破壞性，如果你有備份，肯定要導入這存檔，請按OK，否則按取消，存導入"
 let versionTagName = "version"
 let arrayTypes = getArrayTypeList() // TFW you make code to hardcode for you
 
