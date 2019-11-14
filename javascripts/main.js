@@ -277,7 +277,7 @@ function updateHUD() {
   updateElement("storyDisplay", storyTexts[player.storyId])
   updateElement("particle", shortenMoney(player.particle))
   updateElement("particleCap", shortenMoney(player.particleCap))
-  updateElement("particleClickGain", `Create ${shortenMoney(player.particleCreatePower)} Particles`)
+  updateElement("particleClickGain", `創造 ${shortenMoney(player.particleCreatePower)} 粒子`)
   updateElement("moleculeAmount", shortenMoney(player.molecule))
   updateElement("crankSpeedDisplay", shortenMoney(player.crankSpeed))
   updateElement("crankBoostDisplay", shortenMoney(getCrankBoost()))
@@ -289,7 +289,7 @@ function updateHUD() {
   decideElementDisplay("moleculeDisplayContainer", player.moleculeGained.neq(0))
   decideElementDisplay("crankEffectDisplayContainer", player.itemAmounts.development[4].neq(0))
   decideElementDisplay("moleculeMergerBtn", player.itemAmounts.development[5].neq(0))
-  updateElement("moleculeMergerBtn", player.moleculeMergerOn?`Merging... ${player.moleculeMergerTime.toFixed(1)}/10 sec`:"Make 1 molecule with 1e4 Atoms")
+  updateElement("moleculeMergerBtn", player.moleculeMergerOn?`Merging... ${player.moleculeMergerTime.toFixed(1)}/10 sec`:"用1e4原子創造1分子")
 }
 
 function updateTabBtnDisplay() {
