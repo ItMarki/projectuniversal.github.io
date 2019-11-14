@@ -9,7 +9,7 @@ var researchOnFinish = [
   function() { updateResearchEffect(2); }
 ]
 function updateDisposePercent() {
-  updateElement("researchSpendPercentDisplay", `Dumping ${player.researchSpendPercent}% of particles gained into research`)
+  updateElement("researchSpendPercentDisplay", `將獲得粒子的${player.researchSpendPercent}%輸入到研究`)
 }
 
 canStartResearch = id => player.researchCurrentId != id && player.itemAmounts.research[id].neq(player.itemAmountCaps.research[id])
@@ -38,18 +38,18 @@ function updateResearchEffect(id) {
 function getResearchEffectDisplay(id) {
   switch (id) {
     case 0:
-      return "Creation of first molecule"
+      return "第一分子的創造"
     case 1:
-      return "Cost scale decrease to buildings"
+      return "減少建築物的成本增加"
     case 2:
-      return "Each building increases single production of their tier by a small rate, but compounding"
+      return "每一個建築物都會將自己級數的單一生產力增加一個小小，但複利的比率"
   }
 }
 
 function getDiscoverEffectDisplay(id) {
   switch (id) {
     case 0:
-      return "Bigger scale production of molecules"
+      return "更大分子的生產力"
   }
 }
 
@@ -58,6 +58,6 @@ function getResearchProgress() {
 }
 
 function getResearchStat() {
-  if (player.researchCurrentId == -1) return "Doing nothing."
+  if (player.researchCurrentId == -1) return "現在沒有在做什麼。"
   return `${researchStatText[player.researchCurrentId]} ${formatPercent(getResearchProgress())} done`
 }
