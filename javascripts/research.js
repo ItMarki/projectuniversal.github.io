@@ -1,7 +1,7 @@
 var researchStatText = [
-  "Finding particles that can be merged together...",
-  "Should have played more Factorio...",
-  "One cable here, one cable there..."
+  "正在尋找可以聚合的粒子……",
+  "應該玩了更多Factorio……",
+  "這裏一條管子，那裏一條管子……"
 ]
 var researchOnFinish = [
   function() { player.molecule = player.molecule.plus(2); player.moleculeGained = player.moleculeGained.plus(2); },
