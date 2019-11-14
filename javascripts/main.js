@@ -66,16 +66,16 @@ let prologueGenActivated = false
 let storyTexts = ["你的宇宙在快速地衰退。",
                   "來對付這件事，你的船員們創造一個口袋維度，在需要的時候逃走。",
                   "但是短短之後，你才發現……",
-                  "你在參與宇宙的最終時刻。",
-                  "And it all starts with this generator.",
-                  "SYSTEM: The sum of all matter produced in the universe has surpassed the maximum threshold. Universal collapse in estimated ten seconds.",
-                  "The Beginning.",
-                  "Building unlocked.",
-                  "Development unlocked.",
-                  "Tier 1 unlocked.",
-                  "Research unlocked.",
-                  "Tier 2 unlocked.",
-                  "Cranks unlocked, end of content."]
+                  "你身處在宇宙的最終時刻。",
+                  "故事的開始就是這個生產器。",
+                  "系統：宇宙裏全部生產的物質的總數已經超越了最大限界。宇宙倒塌在大約10秒內發生。",
+                  "開始。",
+                  "建築物已解鎖。",
+                  "發展已解鎖。",
+                  "第1級已解鎖。",
+                  "研究已解鎖。",
+                  "第2級已解鎖。",
+                  "曲軸已解鎖，內容完畢。"]
 let existingTabNames = ["generator","buildings","merger","development","research","cranks","lore","options"]
 let currentTab = "buildings"
 
