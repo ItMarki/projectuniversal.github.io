@@ -1,5 +1,5 @@
 function getCrankSpeedText() {
-  return `Current Speed: ${shortenMoney(player.crankSpeed)}/${shortenMoney(player.crankSpeedCap)}`
+  return `現在速度：${shortenMoney(player.crankSpeed)}/${shortenMoney(player.crankSpeedCap)}`
 }
 
 var crankSpeedBar = new ProgressBar.Line('#crankSpeedBar', {
