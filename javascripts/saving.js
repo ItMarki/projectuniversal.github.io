@@ -4,7 +4,7 @@
 let saveName = "PUSave"
 let initPlayerFunctionName = "getDefaultPlayer"
 let playerVarName = "player" // DO NOT USE THE WORD "SAVE"
-let importDangerAlertText = "你導入的存檔好像不見了一些數值，意思是導入這存檔可能有一些破壞性，如果你有備份，肯定要導入這存檔，請按OK，否則按取消，存導入"
+let importDangerAlertText = "你導入的存檔好像不見了一些數值，意思是導入這存檔可能有一些破壞性，如果你有備份，肯定要導入這存檔，請按OK，否則按取消，存檔不會導入。"
 let versionTagName = "version"
 let arrayTypes = getArrayTypeList() // TFW you make code to hardcode for you
 
@@ -22,9 +22,9 @@ function onImportSuccess() {
 
 function onLoad() { // Put your savefile updating codes here
   if (player.version === null || player.version < 9) {
-    alert("Your save is obsolete, which means you will be forced to do a hard reset before proceed, sorry!")
-    if (confirm("Would you like to export the save for backup? THIS IS THE ONLY CHANCE TO KEEP THE OLD SAVE")) exportGame()
-    alert("Now we will perform a hard reset, if you decide to export before doing it, REFRESH NOW AND CHOOSE YES IN THE PREVIOUS PROMPT!")
+    alert("你的存檔過時了，意思是你被強迫做硬重置，才能進行，對不起！")
+    if (confirm("你想不想要導出存檔做備份？這是保留舊存檔的最後機會。")) exportGame()
+    alert("現在我們要做硬重置，如果你決定在做完之前要導出，請刷新，在之前的命令裏按「是」！")
     hardReset(true)
   }
   if (player.version < 10) {
