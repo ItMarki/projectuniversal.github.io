@@ -64,7 +64,7 @@ function loadGame(save, imported = false) {
     let saveLists = listItems(save)
     let missingItem = refLists[0].diff(saveLists[0])
     if (missingItem.includes("save")) {
-      console.log("Unrecoverable corrupted save detected, loading default save...")
+      console.log("已偵測不能恢復的破壞的存檔，正在加載默認存檔……")
       return
     }
     if (missingItem.length != 0 && imported) {
