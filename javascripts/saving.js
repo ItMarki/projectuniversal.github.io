@@ -9,15 +9,15 @@ let versionTagName = "version"
 let arrayTypes = getArrayTypeList() // TFW you make code to hardcode for you
 
 function onImportError() {
-  alert("Error: Imported save is in invalid format, please make sure you've copied the save correctly and isn't just typing gibberish.")
+  alert("錯誤：導入存檔的格式不正規，請檢查你有沒有正確地複製，而不是輸入廢話。")
 }
 
 function onLoadError() {
-  console.log("The save didn't load? Oh fuck.")
+  console.log("存檔沒有加載？幹。")
 }
 
 function onImportSuccess() {
-  alert("Save imported successfully.")
+  alert("導入存檔成功。")
 }
 
 function onLoad() { // Put your savefile updating codes here
