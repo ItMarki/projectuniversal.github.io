@@ -1,8 +1,8 @@
 var developmentTypes = ["c","c","c","i","e","e"]
 var developmentTypeFullNames = {
-  "c":"Construction",
-  "e":"Expansion",
-  "i":"Improvement"
+  "c":"建築",
+  "e":"擴展",
+  "i":"改善"
 }
 
 function updateAllDevelopmentEffect() {
@@ -40,10 +40,10 @@ function getDevelopmentCostCurrencyName(id) {
     case 1:
     case 2:
     case 5:
-      return "atom"
+      return "原子"
     case 3:
     case 4:
-      return "molecule"
+      return "分子"
     default:
       return "bug"
   }
@@ -56,13 +56,13 @@ function getDevelopmentEffectDisplay(id) {
       return `${shortenMoney(getDevelopmentEffect(id))}x`
       break;
     case 2:
-      return "Unlocks Research"
+      return "解鎖研究"
     case 3:
       return `${new Decimal(3).sub(getDevelopmentEffect(id))}:1`
     case 4:
-      return "Unlocks the Cranks"
+      return "解鎖曲軸"
     case 5:
-      return "Unlocks the molecule merger"
+      return "解鎖分子聚合機"
     default:
       return "Missing(BUG)"
   }
