@@ -55,8 +55,8 @@ var itemDescs = {
     "從之前所知道的建造一個固定的分子聚合機"
   ],
   research: [
-    "Attempt to construct a molecule out of all the particles",
-    "Let buildings sustain themselves using particle they produced, making it easier to maintain more building",
+    "嘗試用全部粒子建造一個分子",
+    "讓建築物用生產的粒維持自己，令維持更多建築物更容易",
     "Enable buildings to work together and much faster, making each new building speeding up old ones as well"
   ],
   discover: [
