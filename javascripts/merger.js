@@ -1,5 +1,5 @@
 function updateMergerDescs() {
-  updateElement("atomMergerDesc", `Atom Merger: ${player.particleAtomRatio} Particles -> 1 Atom, ${shorten(player.mergePower)} bulks max, 1s interval`)
+  updateElement("atomMergerDesc", `原子聚合機：${player.particleAtomRatio}粒子 → 1 原子，最大批量${shorten(player.mergePower)}，時間1秒`)
 }
 
 function moleculeMergerActivate() {
